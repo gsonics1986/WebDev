@@ -1,1 +1,1 @@
-# Web-Technology
+# Web-Technology Lab Assessment (IFT 203)
