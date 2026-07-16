@@ -1,0 +1,162 @@
+/* DOM Structure Page
+   Urban Couture
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F8F5F0;
+    color:#2E2E2E;
+    line-height:1.6;
+}
+
+h1,h2,h3{
+    font-family:'Playfair Display',serif;
+}
+
+/* Header */
+header{
+    background:#0F4C3A;
+    color:#fff;
+    text-align:center;
+    padding:40px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    color:#F8F5F0;
+    letter-spacing:2px;
+}
+
+header p{
+    margin-top:10px;
+    color:#D4C2A8;
+    font-size:1.1rem;
+}
+
+/* Main Container */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+    background:#fff;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+/* Tree */
+.tree,
+.tree ul{
+    list-style:none;
+    margin-left:25px;
+    position:relative;
+}
+
+.tree li{
+    position:relative;
+    margin:15px 0;
+    padding-left:30px;
+    transition:.3s;
+}
+
+/* Tree Lines */
+.tree li::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:-10px;
+    width:2px;
+    height:100%;
+    background:#D4C2A8;
+}
+
+.tree li::after{
+    content:"";
+    position:absolute;
+    left:0;
+    top:18px;
+    width:20px;
+    height:2px;
+    background:#D4C2A8;
+}
+
+/* Root Node */
+.root{
+    display:inline-block;
+    background:#0F4C3A;
+    color:#F8F5F0;
+    padding:10px 20px;
+    border-radius:30px;
+    font-weight:600;
+    font-size:18px;
+}
+
+/* Folder Node */
+.folder{
+    display:inline-block;
+    background:#D4C2A8;
+    color:#0F4C3A;
+    padding:8px 18px;
+    border-radius:30px;
+    font-weight:600;
+}
+
+/* Child Items */
+.tree li:hover{
+    color:#0F4C3A;
+    transform:translateX(6px);
+}
+
+/* Optional Highlight */
+.tree li span:hover{
+    opacity:.9;
+}
+
+/* Footer */
+footer{
+    background:#0F4C3A;
+    color:#F8F5F0;
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
+}
+
+footer p{
+    color:#D4C2A8;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.container{
+    width:95%;
+    padding:25px;
+}
+
+header h1{
+    font-size:2.2rem;
+}
+
+.tree,
+.tree ul{
+    margin-left:15px;
+}
+
+.tree li{
+    padding-left:20px;
+}
+
+.root,
+.folder{
+    font-size:15px;
+}
+
+}
